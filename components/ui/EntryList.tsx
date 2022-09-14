@@ -33,7 +33,7 @@ export const EntryList: React.FC<Props> = ({ status }) => {
   return (
     <div onDrop={onDropEntry} onDragOver={allowDrop}>
       <Paper
-        sx={{ height: "calc(100vh - 180px)", overflow: "scroll", backgroundColor: "transparent", padding: "3px 5px" }}
+        sx={{ height: "calc(100vh - 180px)", overflow: "hidden", backgroundColor: "transparent", padding: "3px 5px" }}
       >
         <List sx={{ opacity: isDragging ? 0.2 : 1, transition: "all .3s " }}>
           {entriesByStatus.map((entry) => (
